@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wonderhood Assignment</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<script type="text/javascript">
+		function openmenu() {		
+				document.getElementById("left").style.display = "grid";
+		}
+		function closemenu() {
+			document.getElementById("left").style.display = "none";
+		}
+
+	</script>
+	<script type="text/javascript">
+		var load=window.addEventListener("load", function(){
+			loadImages();
+		});
+		var load=window.addEventListener("resize", function(){
+			loadImages();
+		});
+		var load=window.addEventListener("scroll", function(){
+			loadImages();
+		});
+		function loadImages(){
+			var images = document.querySelectorAll(".lozad");
+
+			for(var i=0; i < images.length ;i++){
+				var imageBounds = images[i].getBoundingClientRect();
+
+				if(imageBounds.top >= 0 && imageBounds.left >= 0 && 
+					imageBounds.bottom <= window.innerHeight && imageBounds.right <= window.innerWidth){
+					images[i].src=images[i].dataset.src;
+				}
+			}
+		}
+	</script>
+
+</head>
+<body>
+<div class="container">
+	<div class="top box">
+		<div class="ham"><img class="img" id="opbt" onclick="openmenu()" src="ham-button.png"></div>
+		<div class="login"><img src="cart.png"><img src="login.png"></div>
+	</div>	
+	<div class="content box" onscroll="loadImages()">
+		<div class="image"><img src="loading.gif" data-src="1.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="2.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="3.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="4.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="5.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="6.jpeg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="7.jpeg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="8.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="9.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="10.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="11.jpg" class="lozad"></div> 
+		<div class="image"><img src="loading.gif" data-src="12.jpg" class="lozad"></div> 
+		<div class="image"><img src="loading.gif" data-src="14.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif"  data-src="15.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="16.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif"  data-src="17.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="18.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif"  data-src="19.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="20.png" class="lozad"></div>
+		<div class="image"><img src="loading.gif"  data-src="21.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="22.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif"  data-src="23.jpeg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="24.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif"  data-src="25.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="26.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif"  data-src="27.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="28.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif"  data-src="29.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="30.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif"  data-src="31.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="32.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="33.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="34.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="35.png" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="36.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="37.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="38.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="39.jpeg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="40.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="41.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="42.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="43.jpeg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="44.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="45.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="46.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="47.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="48.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="49.jpg" class="lozad"></div>
+		<div class="image"><img src="loading.gif" data-src="50.jpg" class="lozad"></div>
+	</div>
+	<div class="left box" id="left">
+		<div class="cross"><img class="img" id="crsbt" onclick="closemenu()" src="cross.png" ></div>
+		<div class="menu"><ul>
+			<li>BUY</li>
+			<li>SHARE</li>
+			<li>DOWNLOAD</li>
+			<li>SELL</li>
+		</ul></div>
+	</div>
+</div>
+</body>
+</html>
